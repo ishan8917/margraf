@@ -1,301 +1,1965 @@
-<html>
-
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-
-    <body>
-        <header>
-            <div id="topbar" class="fixed z-[9999] py-5 left-0 top-0 w-full lg:py-9" data-v-64b75e69="">
-                <div class="flex items-center justify-between px-6 _container md:px-8 h-14" data-v-64b75e69="">
-                    <div class="md:w-1/4" data-v-64b75e69="">
-                        <a href="/en/" aria-current="page" class="inline-block nuxt-link-exact-active nuxt-link-active"
-                            data-v-64b75e69="">
-                            <img data-v-64b75e69="" src="images/margraf-logo-white.png" alt="Margraf logo" width="200"
-                                height="30" class="logo"></a>
-                    </div>
-                    <div class="hidden xl:flex justify-center md:w-1/2 text-[12px] font-normal h-full"
-                        data-v-64b75e69="">
-                        <div class="flex justify-center h-full text-black duration-300 shadow rounded-2xl"
-                            data-v-64b75e69="">
-                            <nav class="flex items-center gap-1 px-3 bg-white/50 backdrop-blur-xl rounded-l-2xl">
-                                <button to="/" class="duration-300 rounded-md hover:bg-gray">
-                                    <div class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group">
-                                        Company
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" xml:space="preserve"
-                                            class="duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 icon icon-sm inline-block"
-                                            style="enable-background:new 0 0 18 18">
-                                            <path
-                                                d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
-                                                style="fill:currentColor"></path>
-                                        </svg>
-                                    </div>
-                                </button>
-                                <button to="/en/products/" class="duration-300 rounded-md hover:bg-gray">
-                                    <div class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group">
-                                        Products
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" xml:space="preserve"
-                                            class="duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 icon icon-sm inline-block"
-                                            style="enable-background:new 0 0 18 18">
-                                            <path
-                                                d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
-                                                style="fill:currentColor"></path>
-                                        </svg>
-                                    </div>
-                                </button>
-                                <a href="/en/projects/" class="duration-300 rounded-md hover:bg-gray">
-                                    <div class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group">
-                                        Projects
-                                        <!---->
-                                    </div>
-                                </a>
-                                <a href="/en/contacts/" class="duration-300 rounded-md hover:bg-gray">
-                                    <div class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group">
-                                        Contacts
-                                        <!---->
-                                    </div>
-                                </a>
-                            </nav>
-                            <a href="https://magazzinoonline.margraf.it/en" target="_blank"
-                                class="flex items-center px-3 duration-300 bg-accent hover:bg-accent-400">
-                                <div class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group">
-                                    Online store
-                                    <!---->
-                                </div>
-                            </a>
-                            <button target="_blank"
-                                class="flex items-center px-5 text-white duration-300 bg-black-pure rounded-r-2xl hover:bg-gray-dark"><svg
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" xml:space="preserve"
-                                    class="text-sm icon icon-text inline-block" style="enable-background:new 0 0 18 18">
-                                    <path
-                                        d="m15.4 14.6-2.8-2.8c.9-1.1 1.5-2.5 1.5-4.1 0-3.5-2.8-6.3-6.3-6.3S1.5 4.3 1.5 7.8s2.8 6.3 6.3 6.3c1.6 0 3-.6 4.1-1.5l2.8 2.8c.1.1.2.1.4.1s.3 0 .4-.1c0-.2 0-.6-.1-.8zM2.5 7.8c0-2.9 2.4-5.3 5.3-5.3s5.3 2.4 5.3 5.3c0 1.4-.6 2.8-1.5 3.7-1 .9-2.3 1.5-3.7 1.5-3 .1-5.4-2.3-5.4-5.2z"
-                                        style="fill:currentColor"></path>
-                                </svg>
-                                <div class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group">
-                                    Search
-                                    <!---->
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="text-right md:w-1/4" data-v-64b75e69="">
-                        <button
-                            class="w-16 h-16 text-white duration-500 rounded-full group bg-black-pure/70 backdrop-blur-lg"
-                            data-v-64b75e69="">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" xml:space="preserve"
-                                class="duration-700 ease-elastic group-hover:scale-90 icon icon-lg inline-block rotate-0"
-                                style="enable-background:new 0 0 18 18" data-v-64b75e69="">
-                                <path
-                                    d="M17.5 8.5h-8v-8C9.5.2 9.3 0 9 0s-.5.2-.5.5v8h-8c-.3 0-.5.2-.5.5s.2.5.5.5h8v8c0 .3.2.5.5.5s.5-.2.5-.5v-8h8c.3 0 .5-.2.5-.5s-.2-.5-.5-.5z"
-                                    style="fill:currentColor"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="fixed z-[9998] inset-0 w-full h-full overflow-auto text-black text-md font-medium flex flex-col duration-300 transition-colors bg-accent"
-                style="display: none; translate: none; rotate: none; scale: none; transform: translate(0%, -100%);">
-                <div data-v-7bccaf30="" class="columns-wrapper flex-1">
-                    <div data-v-7bccaf30="" class="_column">
-                        <button data-v-1356be5e="" data-v-7bccaf30="" to="/" class="uppercase panel-item default">
-                            Company
-                        </button>
-                        <button data-v-1356be5e="" data-v-7bccaf30="" to="/en/products/"
-                            class="uppercase panel-item default">
-                            Products
-                        </button>
-                        <a data-v-1356be5e="" data-v-7bccaf30="" href="/en/projects/"
-                            class="uppercase panel-item default">
-                            Projects
-                        </a>
-                        <a data-v-1356be5e="" data-v-7bccaf30="" href="/en/contacts/"
-                            class="uppercase panel-item default">
-                            Contacts
-                        </a>
-                        <a data-v-1356be5e="" data-v-7bccaf30="" href="/en/news/" class="uppercase panel-item small">
-                            News
-                        </a>
-                        <a data-v-1356be5e="" data-v-7bccaf30="" href="/en/jobs/" class="uppercase panel-item small">
-                            Jobs
-                        </a>
-                        <a data-v-1356be5e="" data-v-7bccaf30="" href="/en/downloads/"
-                            class="uppercase panel-item small">
-                            Download area
-                        </a>
-                    </div>
-                    <div data-v-7bccaf30="" class="_column"><!----></div>
-                    <div data-v-7bccaf30="" class="_column"><!----></div>
-                </div>
-                <div class="border-t">
-                    <div class="container flex flex-col items-center justify-between gap-4 py-8 text-base lg:flex-row">
-                        <div class="flex flex-col items-center gap-4 md:flex-row">
-                            <a href="https://magazzinoonline.margraf.it/en" target="_blank">
-                                <div class="btn" data-v-f4c47d22="">
-                                    <div class="bg" data-v-f4c47d22=""></div>
-                                    <div class="label" data-v-f4c47d22="">
-                                        Online store
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" xml:space="preserve"
-                                        class="btn-icon icon icon-base inline-block"
-                                        style="enable-background:new 0 0 18 18" data-v-f4c47d22="">
-                                        <path
-                                            d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
-                                            style="fill:currentColor"></path>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="flex flex-col items-center gap-4 md:flex-row">
-                            <button class="btn btn-white icon-left" data-v-f4c47d22="">
-                                <div class="bg" data-v-f4c47d22=""></div>
-                                <div class="label" data-v-f4c47d22="">
-                                    Search
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" xml:space="preserve"
-                                    class="btn-icon icon icon-base inline-block" style="enable-background:new 0 0 18 18"
-                                    data-v-f4c47d22="">
-                                    <path
-                                        d="m15.4 14.6-2.8-2.8c.9-1.1 1.5-2.5 1.5-4.1 0-3.5-2.8-6.3-6.3-6.3S1.5 4.3 1.5 7.8s2.8 6.3 6.3 6.3c1.6 0 3-.6 4.1-1.5l2.8 2.8c.1.1.2.1.4.1s.3 0 .4-.1c0-.2 0-.6-.1-.8zM2.5 7.8c0-2.9 2.4-5.3 5.3-5.3s5.3 2.4 5.3 5.3c0 1.4-.6 2.8-1.5 3.7-1 .9-2.3 1.5-3.7 1.5-3 .1-5.4-2.3-5.4-5.2z"
-                                        style="fill:currentColor"></path>
-                                </svg>
-                            </button>
-                            <div class="relative inline-block">
-                                <button class="btn btn-black icon-left" data-v-f4c47d22="">
-                                    <div class="bg" data-v-f4c47d22=""></div>
-                                    <div class="label" data-v-f4c47d22="">
-                                        en
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" xml:space="preserve"
-                                        class="btn-icon icon icon-base inline-block"
-                                        style="enable-background:new 0 0 18 18" data-v-f4c47d22="">
-                                        <path
-                                            d="M8.8 1.5c-4 0-7.2 3.3-7.2 7.2 0 4 3.3 7.2 7.2 7.2 4 0 7.2-3.3 7.2-7.2 0-3.9-3.3-7.2-7.2-7.2zM15 8.2h-3.1c-.1-2-.8-4-2-5.6 2.7.5 4.8 2.8 5.1 5.6zm-8.4 1h4.3c-.1 2-.9 3.9-2.2 5.5-1.2-1.5-2-3.5-2.1-5.5zm0-1c.1-2 .9-3.9 2.2-5.5 1.3 1.6 2 3.5 2.2 5.5H6.6zm1-5.6c-1.2 1.6-1.9 3.6-2 5.6H2.5c.3-2.8 2.4-5.1 5.1-5.6zM2.5 9.2h3.1c.1 2 .8 4 2 5.6-2.7-.4-4.8-2.7-5.1-5.6zm7.4 5.7c1.2-1.6 1.9-3.6 2-5.6H15c-.3 2.8-2.4 5.1-5.1 5.6z"
-                                            style="fill:currentColor"></path>
-                                    </svg>
-                                </button>
-                                <!---->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta data-n-head="ssr" charset="utf-8" />
+    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1" />
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no" />
+    <title>
+      Processing of fine marble and natural stone for design and architecture |
+      Margraf SPA
+    </title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    
+    <link
+      data-n-head="ssr"
+      rel="preconnect"
+      href="https://fonts.googleapis.com/"
+    />
+    <link
+      data-n-head="ssr"
+      rel="preconnect"
+      href="https://fonts.gstatic.com/"
+      crossorigin="true"
+    />
+    <link
+      data-n-head="ssr"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gantari:wght@300;400;500;700&amp;display=swap"
+    />
+    
+    <!-- Link Swiper's CSS -->
+    
+    <link rel="preload" href="_nuxt/38884c4.js" as="script" />
+    <link rel="preload" href="_nuxt/a41e084.js" as="script" />
+    <link rel="preload" href="_nuxt/css/a3fe692.css" as="style" />
+    <link rel="preload" href="_nuxt/0164e5b.js" as="script" />
+    <link rel="preload" href="_nuxt/css/e0a18cf.css" as="style" />
+    <link rel="preload" href="_nuxt/3c5cde3.js" as="script" />
+    <link rel="preload" href="_nuxt/css/3c85f11.css" as="style" />
+    <link rel="preload" href="_nuxt/69be6c3.js" as="script" />
+    <link rel="preload" href="_nuxt/css/6ca4747.css" as="style" />
+    <link rel="preload" href="_nuxt/e3d9f18.js" as="script" />
+    <link rel="preload" href="_nuxt/css/5c08b22.css" as="style" />
+    <link rel="preload" href="_nuxt/5d3a765.js" as="script" />
+    <link rel="stylesheet" href="_nuxt/css/a3fe692.css" />
+    <link rel="stylesheet" href="_nuxt/css/e0a18cf.css" />
+    <link rel="stylesheet" href="_nuxt/css/3c85f11.css" />
+    <link rel="stylesheet" href="_nuxt/css/6ca4747.css" />
+    <link rel="stylesheet" href="_nuxt/css/5c08b22.css" />
+    <link rel="preload" href="_nuxt/static/1776180784/en/state.js" as="script" />
+    <link rel="preload" href="_nuxt/static/1776180784/en/payload.js"as="script"/>
+    <link rel="preload" href="_nuxt/static/1776180784/manifest.js" as="script" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt">
+      <!---->
+      <div id="__layout">
+        <div>
+          <header>
             <div
-                class="fixed bottom-3 right-[--gutter] bg-black text-white rounded-2xl p-5 z-40 w-72 border border-white">
-                <div data-v-62784a99=""><button class="w-full" data-v-62784a99="">
-                        <div class="flex items-center gap-3 text-left" data-v-62784a99=""><svg
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 26"
-                                class="shrink-0 icon icon-base inline-block" data-v-62784a99="">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15.076 23.8a2.4 2.4 0 0 1-4.152 0M25 19H1a3.6 3.6 0 0 0 3.6-3.6v-6a8.4 8.4 0 0 1 16.8 0v6A3.6 3.6 0 0 0 25 19v0Z">
-                                </path>
-                            </svg>
-                            <h2 class="heading heading-sm" data-v-aced7c02="" data-v-62784a99="">Fuorisalone 2026</h2>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" xml:space="preserve"
-                                class="ml-auto duration-300 icon icon-base inline-block rotate-180"
-                                style="enable-background:new 0 0 18 18" data-v-62784a99="">
-                                <path
-                                    d="M17.8 8.6 9.4.2S9.3.1 9.2.1c-.1-.1-.3-.1-.4 0-.1 0-.1.1-.2.1L.2 8.6c-.2.2-.2.6 0 .8s.5.2.7 0l7.6-7.6v15.8c0 .2.2.4.5.4s.5-.2.5-.5V1.7l7.6 7.6c.1.1.2.1.4.1s.3 0 .4-.1c.1-.1.1-.5-.1-.7z"
-                                    style="fill:currentColor"></path>
-                            </svg>
-                        </div>
-                    </button>
-                    <div style="" data-v-62784a99="">
-                        <div>
-                            <p class="py-4">
-                                LA CASA DI MARMO - From April 20 to 26 we will be in Milan.
-
-                                Join us.
-                            </p>
-                            <div class="relative w-full h-0 pb-[56.25%] rounded-2xl overflow-hidden"><img
-                                    src="https://margraf-cdn.thron.com/delivery/public/image/margraf/6667855a-5ed9-49ee-bb3c-bf593df36097/huusih/std/300x300/pop-up-fuorisalone.jpeg"
-                                    alt="POP-UP-FUORISALONE"
-                                    class="absolute inset-0 object-cover object-center w-full h-full"></div> <a
-                                href="/en/news/fuorisalone-2026-la-casa-di-marmo/" class="mt-4 inline-block">
-                                <div class="btn btn-light" data-v-f4c47d22="">
-                                    <div class="bg" data-v-f4c47d22=""></div>
-                                    <div class="label" data-v-f4c47d22="">
-                                        Discover more
-                                    </div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"
-                                        xml:space="preserve" class="btn-icon icon icon-base inline-block"
-                                        style="enable-background:new 0 0 18 18" data-v-f4c47d22="">
-                                        <path
-                                            d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
-                                            style="fill:currentColor"></path>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative aspect-[3/4] lg:aspect-video"><video playsinline="" loop="loop" autoplay="autoplay"
-                    muted="muted"
-                    src="https://margraf-cdn.thron.com/delivery/public/video/margraf/4640e96e-b75a-4bbe-9b08-65b9f6d48bae/huusih/WEBHD/margraf-short.mp4"
-                    class="absolute inset-0 object-cover w-full h-full overflow-hidden"></video></div>
-            <div class="container mt-16 mb-24 text-center lg:hidden"><img src="images/margraf-logo-white.png" alt=""
-                    width="200" height="30" class="inline-block max-w-full"></div>
-            <div class="container mt-16 mb-24 text-center lg:hidden"><img src="images/margraf-logo-white.png" alt=""
-                    width="200" height="30" class="inline-block max-w-full"></div>
-            <div class="mt-24">
-                <div class="container flex flex-col justify-between gap-8 mb-6 lg:flex-row lg:items-center lg:mb-24">
-                    <div class="lg:w-2/3">
-                        <h2 class="mb-4 heading heading-lg" data-v-aced7c02="" style="">Our products</h2>
-                        <div class="formatted max-w-prose" style="">Our products are the perfect combination of
-                            elegance, quality and innovation. <strong>From marble to natural stone, explore the
-                                excellence of Margraf</strong> and be inspired by the timeless beauty of our materials.
-                        </div>
-                    </div> <a href="/en/products/" class="" style="">
-                        <div class="btn btn-light" data-v-f4c47d22="">
-                            <div class="bg" data-v-f4c47d22=""></div>
-                            <div class="label" data-v-f4c47d22="">
-                                All products
-                            </div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" xml:space="preserve"
-                                class="btn-icon icon icon-base inline-block" style="enable-background:new 0 0 18 18"
-                                data-v-f4c47d22="">
-                                <path
-                                    d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
-                                    style="fill:currentColor"></path>
-                            </svg>
-                        </div>
+              id="topbar"
+              class="fixed z-[9999] py-5 left-0 top-0 w-full lg:py-9"
+              data-v-64b75e69=""
+            >
+              <div
+                class="flex items-center justify-between px-6 _container md:px-8 h-14"
+                data-v-64b75e69=""
+              >
+                <div class="md:w-1/4" data-v-64b75e69="">
+                    <a data-v-64b75e69="" href="index.html" class="inline-block nuxt-link-exact-active nuxt-link-active" aria-current="page">
+                        <img data-v-64b75e69="" src="images/jade-logo.png" alt="Margraf logo" width="200" height="30"
+                      class="logo"/>
                     </a>
                 </div>
-                
-                <!-- <div class="carousel-wrapper">
-                <button class="nav left" onclick="move(-1)">&#8592;</button>
-
-                <div class="carousel">
-                    <div class="card">
-                    <img src="img1.jpg" />
-                    <p>Crema Alba</p>
+                <div
+                  data-v-64b75e69=""
+                  class="hidden xl:flex justify-center md:w-1/2 text-[12px] font-normal h-full">
+                  <div
+                    data-v-64b75e69=""
+                    class="flex justify-center h-full text-black duration-300 shadow rounded-2xl">
+                    <nav
+                      class="flex items-center gap-1 px-3 bg-white/50 backdrop-blur-xl rounded-l-2xl">
+                      <a
+                        href="about/index.html"
+                        class="duration-300 rounded-md hover:bg-gray"
+                        fdprocessedid="egkig6">
+                        <div class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group">
+                          Company
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" style="enable-background: new 0 0 18 18" xml:space="preserve" class="duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 icon icon-sm inline-block">
+                            <path
+                              d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5 .5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                              style="fill: currentcolor"
+                            ></path>
+                          </svg>
+                        </div>
+                        </a>
+                      <a
+                        href="products/index.html"
+                        class="duration-300 rounded-md hover:bg-gray"
+                        fdprocessedid="288wdy"
+                      >
+                        <div
+                          class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group"
+                        >
+                          Products
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 18 18"
+                            style="enable-background: new 0 0 18 18"
+                            xml:space="preserve"
+                            class="duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 icon icon-sm inline-block"
+                          >
+                            <path
+                              d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                              style="fill: currentcolor"
+                            ></path>
+                          </svg>
+                        </div>
+                        </a>
+                        <a href="projects/index.html" class="duration-300 rounded-md hover:bg-gray">
+                            <div class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group">
+                          Projects
+                          <!---->
+                            </div>
+                        </a
+                      ><a
+                        href="contacts/index.html"
+                        class="duration-300 rounded-md hover:bg-gray"
+                        ><div
+                          class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group"
+                        >
+                          Contacts
+                          <!---->
+                        </div></a
+                      >
+                    </nav>
+                    <a
+                      href="visulizer/test.html"
+                      target="_blank"
+                      class="flex items-center px-3 duration-300 bg-accent hover:bg-accent-400"
+                      ><div
+                        class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group"
+                      >
+                        Visulizer
+                        <!---->
+                      </div></a
+                    >
+                    <button
+                      target="_blank"
+                      class="flex items-center px-5 text-white duration-300 bg-black-pure rounded-r-2xl hover:bg-gray-dark"
+                      fdprocessedid="jn2p6"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 18 18"
+                        style="enable-background: new 0 0 18 18"
+                        xml:space="preserve"
+                        class="text-sm icon icon-text inline-block"
+                      >
+                        <path
+                          d="m15.4 14.6-2.8-2.8c.9-1.1 1.5-2.5 1.5-4.1 0-3.5-2.8-6.3-6.3-6.3S1.5 4.3 1.5 7.8s2.8 6.3 6.3 6.3c1.6 0 3-.6 4.1-1.5l2.8 2.8c.1.1.2.1.4.1s.3 0 .4-.1c0-.2 0-.6-.1-.8zM2.5 7.8c0-2.9 2.4-5.3 5.3-5.3s5.3 2.4 5.3 5.3c0 1.4-.6 2.8-1.5 3.7-1 .9-2.3 1.5-3.7 1.5-3 .1-5.4-2.3-5.4-5.2z"
+                          style="fill: currentcolor"
+                        ></path>
+                      </svg>
+                      <div
+                        class="uppercase leading-none inline-flex items-center gap-2 py-3 px-2 group"
+                      >
+                        Search
+                        <!---->
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="text-right md:w-1/4" data-v-64b75e69="">
+                  <button
+                    class="w-16 h-16 text-white duration-500 rounded-full group bg-black-pure/70 backdrop-blur-lg"
+                    data-v-64b75e69=""
+                    fdprocessedid="t7ay6o"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="duration-700 ease-elastic group-hover:scale-90 icon icon-lg inline-block rotate-0"
+                      style="enable-background: new 0 0 18 18"
+                      data-v-64b75e69=""
+                    >
+                      <path
+                        d="M17.5 8.5h-8v-8C9.5.2 9.3 0 9 0s-.5.2-.5.5v8h-8c-.3 0-.5.2-.5.5s.2.5.5.5h8v8c0 .3.2.5.5.5s.5-.2.5-.5v-8h8c.3 0 .5-.2.5-.5s-.2-.5-.5-.5z"
+                        style="fill: currentColor"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="fixed z-[9998] inset-0 w-full h-full overflow-auto text-black text-md font-medium flex flex-col duration-300 transition-colors bg-accent"
+              style="
+                translate: none;
+                rotate: none;
+                scale: none;
+                transform: translate(0%, -100%);
+                display: none;
+              "
+            >
+              <div data-v-7bccaf30="" class="columns-wrapper flex-1">
+                <div data-v-7bccaf30="" class="_column">
+                  <button
+                    data-v-1356be5e=""
+                    data-v-7bccaf30=""
+                    to="/"
+                    class="uppercase panel-item default"
+                    fdprocessedid="owqmk"
+                  >
+                    Company</button
+                  ><button
+                    data-v-1356be5e=""
+                    data-v-7bccaf30=""
+                    to="products/index.html"
+                    class="uppercase panel-item default"
+                    fdprocessedid="q3u8mx"
+                  >
+                    Products</button
+                  ><a
+                    data-v-1356be5e=""
+                    data-v-7bccaf30=""
+                    href="/en/projects/"
+                    class="uppercase panel-item default"
+                  >
+                    Projects </a
+                  ><a
+                    data-v-1356be5e=""
+                    data-v-7bccaf30=""
+                    href="/en/contacts/"
+                    class="uppercase panel-item default"
+                  >
+                    Contacts </a
+                  ><a
+                    data-v-1356be5e=""
+                    data-v-7bccaf30=""
+                    href="/en/news/"
+                    class="uppercase panel-item small"
+                  >
+                    News </a
+                  ><a
+                    data-v-1356be5e=""
+                    data-v-7bccaf30=""
+                    href="/en/jobs/"
+                    class="uppercase panel-item small"
+                  >
+                    Jobs </a
+                  ><a
+                    data-v-1356be5e=""
+                    data-v-7bccaf30=""
+                    href="/en/downloads/"
+                    class="uppercase panel-item small"
+                  >
+                    Download area
+                  </a>
+                </div>
+                <div data-v-7bccaf30="" class="_column"><!----></div>
+                <div data-v-7bccaf30="" class="_column"><!----></div>
+              </div>
+              <div class="border-t">
+                <div
+                  class="container flex flex-col items-center justify-between gap-4 py-8 text-base lg:flex-row"
+                >
+                  <div class="flex flex-col items-center gap-4 md:flex-row">
+                    <a
+                      href="https://magazzinoonline.margraf.it/en"
+                      target="_blank"
+                      ><div class="btn" data-v-f4c47d22="">
+                        <div class="bg" data-v-f4c47d22=""></div>
+                        <div class="label" data-v-f4c47d22="">Online store</div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 18 18"
+                          xml:space="preserve"
+                          class="btn-icon icon icon-base inline-block"
+                          style="enable-background: new 0 0 18 18"
+                          data-v-f4c47d22=""
+                        >
+                          <path
+                            d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                            style="fill: currentColor"
+                          ></path>
+                        </svg></div
+                    ></a>
+                  </div>
+                  <div class="flex flex-col items-center gap-4 md:flex-row">
+                    <button
+                      class="btn btn-white icon-left"
+                      data-v-f4c47d22=""
+                      fdprocessedid="u7pgc7"
+                    >
+                      <div class="bg" data-v-f4c47d22=""></div>
+                      <div class="label" data-v-f4c47d22="">Search</div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 18 18"
+                        xml:space="preserve"
+                        class="btn-icon icon icon-base inline-block"
+                        style="enable-background: new 0 0 18 18"
+                        data-v-f4c47d22=""
+                      >
+                        <path
+                          d="m15.4 14.6-2.8-2.8c.9-1.1 1.5-2.5 1.5-4.1 0-3.5-2.8-6.3-6.3-6.3S1.5 4.3 1.5 7.8s2.8 6.3 6.3 6.3c1.6 0 3-.6 4.1-1.5l2.8 2.8c.1.1.2.1.4.1s.3 0 .4-.1c0-.2 0-.6-.1-.8zM2.5 7.8c0-2.9 2.4-5.3 5.3-5.3s5.3 2.4 5.3 5.3c0 1.4-.6 2.8-1.5 3.7-1 .9-2.3 1.5-3.7 1.5-3 .1-5.4-2.3-5.4-5.2z"
+                          style="fill: currentColor"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div class="relative inline-block">
+                      <button
+                        class="btn btn-black icon-left"
+                        data-v-f4c47d22=""
+                        fdprocessedid="5japj03"
+                      >
+                        <div class="bg" data-v-f4c47d22=""></div>
+                        <div class="label" data-v-f4c47d22="">en</div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 18 18"
+                          xml:space="preserve"
+                          class="btn-icon icon icon-base inline-block"
+                          style="enable-background: new 0 0 18 18"
+                          data-v-f4c47d22=""
+                        >
+                          <path
+                            d="M8.8 1.5c-4 0-7.2 3.3-7.2 7.2 0 4 3.3 7.2 7.2 7.2 4 0 7.2-3.3 7.2-7.2 0-3.9-3.3-7.2-7.2-7.2zM15 8.2h-3.1c-.1-2-.8-4-2-5.6 2.7.5 4.8 2.8 5.1 5.6zm-8.4 1h4.3c-.1 2-.9 3.9-2.2 5.5-1.2-1.5-2-3.5-2.1-5.5zm0-1c.1-2 .9-3.9 2.2-5.5 1.3 1.6 2 3.5 2.2 5.5H6.6zm1-5.6c-1.2 1.6-1.9 3.6-2 5.6H2.5c.3-2.8 2.4-5.1 5.1-5.6zM2.5 9.2h3.1c.1 2 .8 4 2 5.6-2.7-.4-4.8-2.7-5.1-5.6zm7.4 5.7c1.2-1.6 1.9-3.6 2-5.6H15c-.3 2.8-2.4 5.1-5.1 5.6z"
+                            style="fill: currentColor"
+                          ></path>
+                        </svg>
+                      </button>
+                      <!---->
                     </div>
-                    <div class="card active">
-                    <img src="img2.jpg" />
-                    <p class="highlight">Bellagio</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div>
+            <div
+              class="fixed bottom-3 right-[--gutter] bg-black text-white rounded-2xl p-5 z-40 w-72 border border-white"
+            >
+              <div data-v-62784a99>
+                <button class="w-full" data-v-62784a99>
+                  <div
+                    class="flex items-center gap-3 text-left"
+                    data-v-62784a99
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 25 26"
+                      class="shrink-0 icon icon-base inline-block"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.076 23.8a2.4 2.4 0 0 1-4.152 0M25 19H1a3.6 3.6 0 0 0 3.6-3.6v-6a8.4 8.4 0 0 1 16.8 0v6A3.6 3.6 0 0 0 25 19v0Z"
+                      ></path>
+                    </svg>
+                    <h2 class="heading heading-sm" data-v-aced7c02>
+                      Fuorisalone 2026
+                    </h2>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="ml-auto duration-300 icon icon-base inline-block rotate-180"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <path
+                        d="M17.8 8.6 9.4.2S9.3.1 9.2.1c-.1-.1-.3-.1-.4 0-.1 0-.1.1-.2.1L.2 8.6c-.2.2-.2.6 0 .8s.5.2.7 0l7.6-7.6v15.8c0 .2.2.4.5.4s.5-.2.5-.5V1.7l7.6 7.6c.1.1.2.1.4.1s.3 0 .4-.1c.1-.1.1-.5-.1-.7z"
+                        style="fill: currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+                <div style="display: none" data-v-62784a99 data-v-62784a99>
+                  <div>
+                    <p class="py-4">
+                      LA CASA DI MARMO - From April 20 to 26 we will be in
+                      Milan. Join us.
+                    </p>
+                    <div
+                      class="relative w-full h-0 pb-[56.25%] rounded-2xl overflow-hidden"
+                    >
+                      <img
+                        src="margraf-cdn.thron.com/delivery/public/image/margraf/6667855a-5ed9-49ee-bb3c-bf593df36097/huusih/std/300x300/pop-up-fuorisalone.jpg"
+                        alt=""
+                        class="absolute inset-0 object-cover object-center w-full h-full"
+                      />
                     </div>
-                    <div class="card">
-                    <img src="img3.jpg" />
-                    <p>Fior di Pesco Carnico®</p>
+                    <a
+                      href="news/fuorisalone-2026-la-casa-di-marmo/index.html"
+                      class="mt-4 inline-block"
+                    >
+                      <div class="btn btn-light" data-v-f4c47d22>
+                        <div class="bg" data-v-f4c47d22></div>
+                        <div class="label" data-v-f4c47d22>Discover more</div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 18 18"
+                          xml:space="preserve"
+                          class="btn-icon icon icon-base inline-block"
+                          style="enable-background: new 0 0 18 18"
+                          data-v-f4c47d22
+                        >
+                          <path
+                            d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                            style="fill: currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative aspect-[3/4] lg:aspect-video">
+              <video
+                playsinline
+                loop
+                autoplay
+                muted
+                src="https://margraf-cdn.thron.com/delivery/public/video/margraf/4640e96e-b75a-4bbe-9b08-65b9f6d48bae/huusih/WEBHD/margraf-short.mp4"
+                class="absolute inset-0 object-cover w-full h-full overflow-hidden"
+              ></video>
+            </div>
+            <div class="container mt-16 mb-24 text-center lg:hidden">
+              <img
+                src="../margraf-logo-white.png"
+                alt
+                width="200"
+                height="30"
+                class="inline-block max-w-full"
+              />
+            </div>
+            <div class="mt-24">
+              <div
+                class="container flex flex-col justify-between gap-8 mb-6 lg:flex-row lg:items-center lg:mb-24"
+              >
+                <div class="lg:w-2/3">
+                  <h2 class="mb-4 heading heading-lg" data-v-aced7c02>
+                    Our products
+                  </h2>
+                  <div class="formatted max-w-prose">
+                    Our products are the perfect combination of elegance,
+                    quality and innovation.
+                    <strong
+                      >From marble to natural stone, explore the excellence of
+                      Margraf</strong
+                    >
+                    and be inspired by the timeless beauty of our materials.
+                  </div>
+                </div>
+                <a href="products/index.html">
+                  <div class="btn btn-light" data-v-f4c47d22>
+                    <div class="bg" data-v-f4c47d22></div>
+                    <div class="label" data-v-f4c47d22>All products</div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="btn-icon icon icon-base inline-block"
+                      style="enable-background: new 0 0 18 18"
+                      data-v-f4c47d22
+                    >
+                      <path
+                        d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                        style="fill: currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper">
+                <div data-v-468fe980="" class="wrapper " style="padding-top: 125px;padding-bottom: 187.5px;border-top: 0px;border-bottom: 0px;">
+                <!---->
+                <div
+                  data-v-468fe980=""
+                  class="carousel "
+                  style="perspective: 3000px; cursor: grab"
+                >
+                  <div data-v-468fe980="" class="inner ">
+                    <div
+                      data-v-468fe980=""
+                      class="card swiper-slide"
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate3d(0px, 0px, 600px);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/fior-di-pesco-carnico/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/09cac1bf-d28d-4adf-abfa-4e07e816e732/huusih/std/1920x0/fior-di-pesco-carnico.jpeg"
+                            alt="Fior di Pesco Carnico®"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Fior di Pesco Carnico®
+                        </div>
+                      </a>
                     </div>
-                    <div class="card">
-                    <img src="img4.jpg" />
-                    <p>Rosso Cardinale</p>
+                    <div
+                      data-v-468fe980=""
+                      class="card  swiper-slide"
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate3d(300px, 0px, 519.615px)
+                          rotateY(30deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/rosso-cardinale/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/83fccabb-12ab-4d71-bd4c-0ec09ad7bb93/huusih/std/1920x0/rosso-cardinale.jpeg"
+                            alt="Rosso Cardinale"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Rosso Cardinale
+                        </div>
+                      </a>
                     </div>
-                    <div class="card">
-                    <img src="img5.jpg" />
-                    <p>Grigio Carico</p>
+                    <div
+                      data-v-468fe980=""
+                      class="card swiper-slide"
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate3d(519.615px, 0px, 300px)
+                          rotateY(60deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/grigio-carnico/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/7f2963bb-c183-47f0-b9d1-e58c49c5cef4/huusih/std/1920x0/grigio-carnico.psd"
+                            alt="Grigio Carnico"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Grigio Carnico
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      data-v-468fe980=""
+                      class="card swiper-slide"
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate(600px, 0px) rotateY(90deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/alma/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/4ec80e8a-afe8-461f-a58d-6506337c61ca/huusih/std/1920x0/alma-aria.jpeg"
+                            alt="Alma"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Alma
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      data-v-468fe980=""
+                      class="card" 
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate3d(519.615px, 0px, -300px)
+                          rotateY(120deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/notre-dame/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/445d2649-2141-42ad-a080-4643910df5eb/huusih/std/1920x0/notre-dame.jpeg"
+                            alt="Notre Dame"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Notre Dame
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      data-v-468fe980=""
+                      class="card" 
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate3d(300px, 0px, -519.615px)
+                          rotateY(150deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/polaris-gold/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/5d4a26e7-4818-4226-acef-05492d6e9195/huusih/std/1920x0/polaris-gold.jpeg"
+                            alt="Polaris Gold"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Polaris Gold
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      data-v-468fe980=""
+                      class="card" 
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate3d(0px, 0px, -600px) rotateY(180deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/santafiora/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/b2b27740-9c7e-4e8a-ba2f-2e4d41bd3f66/huusih/std/1920x0/texture-santafiora.jpeg"
+                            alt="Santafiora® Venata"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Santafiora® Venata
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      data-v-468fe980=""
+                      class="card" 
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate3d(-300px, 0px, -519.615px)
+                          rotateY(210deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/breccia-bohemien/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/c0269f01-4c48-4d15-b1cf-769e52dfdf4b/huusih/std/1920x0/breccia-bohemien.jpeg"
+                            alt="Breccia Bohemien"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Breccia Bohemien
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      data-v-468fe980=""
+                      class="card" 
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate3d(-519.615px, 0px, -300px)
+                          rotateY(240deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/travertino-romano-classico/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/b41f2503-31bb-4257-baef-d20e18bd6837/huusih/std/1920x0/travertino-romano-classico-e1693397829255.jpg?cropx=1.0204081632653&amp;cropy=4.8313202832153&amp;cropw=96.428571428571&amp;croph=62.473969179509"
+                            alt="Travertino Romano Classico"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Travertino Romano Classico
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      data-v-468fe980=""
+                      class="card" 
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate(-600px, 0px) rotateY(270deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/travertino-striato/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/07c0c837-3fe1-4666-903c-16bef6028114/huusih/std/1920x0/travertino-striato-vena-aperta.jpeg"
+                            alt="Travertino Striato"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Travertino Striato
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      data-v-468fe980=""
+                      class="card" 
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate3d(-519.615px, 0px, 300px)
+                          rotateY(300deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/cremo-italia/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/fbeb0597-a373-4fc8-8586-94900611ba9c/huusih/std/1920x0/cremo-italia.jpeg"
+                            alt="Cremo Italia"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Cremo Italia
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      data-v-468fe980=""
+                      class="card" 
+                      style="
+                        width: 250px;
+                        transform-origin: 125px 195.75px;
+                        transform: translate3d(-300px, 0px, 519.615px)
+                          rotateY(330deg);
+                        translate: none;
+                        rotate: none;
+                        scale: none;
+                      "
+                    >
+                      <a
+                        data-v-468fe980=""
+                        href="/en/products/bellagio/"
+                        class="w-full cursor-pointer group"
+                        product-card=""
+                      >
+                        <div
+                          class="w-full h-0 pb-[140%] relative overflow-hidden rounded-2xl"
+                        >
+                          <img
+                            src="https://margraf-cdn.thron.com/delivery/public/image/margraf/2ad8a7a5-d835-474b-884d-a34607419a6c/huusih/std/1920x0/bellagio.jpeg"
+                            alt="Bellagio"
+                            class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105"
+                          />
+                          <div
+                            class="absolute inset-0 w-full h-full duration-300 border-4 border-transparent group-hover:border-accent rounded-2xl"
+                          ></div>
+                        </div>
+                        <div
+                          class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent"
+                        >
+                          Bellagio
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div data-v-468fe980="" class="nav">
+                  <button
+                    data-v-468fe980=""
+                    class="button-prev"
+                    fdprocessedid="ao06yp"
+                  >
+                    <svg
+                      data-v-468fe980=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 18 18"
+                      style="enable-background: new 0 0 18 18"
+                      xml:space="preserve"
+                      class="icon icon-base inline-block"
+                    >
+                      <path
+                        d="M17.5 8.5H1.7L9.3.9c.2-.2.2-.5 0-.7s-.5-.2-.7 0L.2 8.6s-.1.1-.1.2c-.1.1-.1.3 0 .4 0 .1.1.1.1.2l8.5 8.5s.2.1.3.1.3 0 .4-.1c.2-.2.2-.5 0-.7L1.7 9.5h15.8c.3 0 .5-.2.5-.5s-.2-.5-.5-.5z"
+                        style="fill: currentcolor"
+                      ></path>
+                    </svg>
+                  </button>
+                  <button
+                    data-v-468fe980=""
+                    class="button-next"
+                    fdprocessedid="aggx4q"
+                  >
+                    <svg
+                      data-v-468fe980=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 18 18"
+                      style="enable-background: new 0 0 18 18"
+                      xml:space="preserve"
+                      class="icon icon-base inline-block"
+                    >
+                      <path
+                        d="M17.9 9.2c.1-.1.1-.3 0-.4 0-.1-.1-.1-.1-.2L9.4.2c-.2-.2-.6-.2-.8 0s-.2.5 0 .7l7.6 7.6H.5c-.3 0-.5.2-.5.5s.2.5.5.5h15.8l-7.6 7.6c-.2.2-.2.5 0 .7 0 .1.2.2.3.2s.3 0 .4-.1l8.5-8.5v-.2z"
+                        style="fill: currentcolor"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!---->
+            </div>
+              </div>
+              
+            <section
+              data-section="none"
+              class="overflow-x-hidden section-bg-none round-all margins-all paddings-small"
+              data-v-e7e61232
+            >
+              <div
+                class="container flex flex-col justify-between gap-8 mb-6 lg:flex-row lg:items-center lg:mb-24"
+                data-v-e7e61232
+              >
+                <div class="lg:w-2/3" data-v-e7e61232>
+                  <h2 class="mb-4 heading heading-lg" data-v-aced7c02>
+                    Some of our projects
+                  </h2>
+                  <div class="formatted max-w-prose">
+                    <p>
+                      A material with no limits. Explore the infinite
+                      possibilities of marble in projects for
+                      <strong
+                        >private residences, the contract sector, public spaces
+                        and hospitality</strong
+                      >
+                      carried out with Margraf marble: all over the world, from
+                      the 20th century to today.
+                    </p>
+                  </div>
+                </div>
+                <a href="projects/index.html">
+                  <div class="btn btn-light" data-v-f4c47d22>
+                    <div class="bg" data-v-f4c47d22></div>
+                    <div class="label" data-v-f4c47d22>All projects</div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="btn-icon icon icon-base inline-block"
+                      style="enable-background: new 0 0 18 18"
+                      data-v-f4c47d22
+                    >
+                      <path
+                        d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                        style="fill: currentColor"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="container" data-v-e7e61232>
+                <div class="swiper !overflow-visible mt-12 lg:mt-24 swiper-horizontal swiper-backface-hidden mySwiper">
+                <div class="swiper-wrapper" >
+                    <div class="swiper-slide w-full h-0 relative overflow-hidden rounded-2xl duration-300 group-hover:scale-90" style="width: 584.4px; margin-right: 50px;">
+                        <a data-v-1e34df72="" href="/en/projects/fontainebleau-casino-las-vegas/" class="w-full cursor-pointer group">
+                            <div class="w-full h-0 pb-[100%] relative overflow-hidden rounded-2xl duration-300 group-hover:scale-90">
+                                <img src="https://margraf-cdn.thron.com/delivery/public/image/margraf/f96d6ed4-9d6d-4994-849a-70c792c45d67/huusih/std/1920x0/fontainebleau-las-vegas.tiff" class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105">
+                            </div> 
+                            <div class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent">
+                                Fontainebleau Casino, Las Vegas
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide w-full h-0 relative overflow-hidden rounded-2xl duration-300 group-hover:scale-90">
+                        <a data-v-1e34df72="" href="/en/projects/hotel-six-senses-rome-palazzo-salviati-cesi-mellini/" class="w-full cursor-pointer group">
+                            <div class="w-full h-0 pb-[100%] relative overflow-hidden rounded-2xl duration-300 group-hover:scale-90">
+                                <img src="https://margraf-cdn.thron.com/delivery/public/image/margraf/a22f40ae-0ab3-4681-9598-3cc39c3e8cc3/huusih/std/1920x0/travertino-romano-classico-rivestimento-e-pavimento.jpeg" class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105">
+                            </div>
+                            
+                            <div class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent">
+                                Hotel Six Senses Rome, Palazzo Salviati Cesi Mellini
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide w-full h-0 relative overflow-hidden rounded-2xl duration-300 group-hover:scale-90">
+                        <a data-v-1e34df72="" href="/en/projects/rotas/" class="w-full cursor-pointer group">
+                            <div class="w-full h-0 pb-[100%] relative overflow-hidden rounded-2xl duration-300 group-hover:scale-90">
+                                <img src="https://margraf-cdn.thron.com/delivery/public/image/margraf/d9cc70be-b1c4-41bf-8443-82d79a85cff9/huusih/std/1920x0/rotas.jpeg" class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent">
+                                Rotas
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide w-full h-0 relative overflow-hidden rounded-2xl duration-300 group-hover:scale-90">
+                        <a data-v-1e34df72="" href="/en/projects/irek-mosque/" class="w-full cursor-pointer group">
+                            <div class="w-full h-0 pb-[100%] relative overflow-hidden rounded-2xl duration-300 group-hover:scale-90">
+                                <img src="https://margraf-cdn.thron.com/delivery/public/image/margraf/45c38409-4d21-4172-a4b0-7e56f35e4e32/huusih/std/1920x0/intarsi-floreali-su-bianco-sivec-moschea-di-irek-a-kazan-russia.tiff" class="absolute object-cover object-center w-full h-full duration-300 group-hover:scale-105">
+                            </div>
+                            <div class="mt-6 text-sm font-bold text-center duration-300 group-hover:text-accent">
+                                Irek Mosque
+                            </div>
+                        </a>
                     </div>
                 </div>
-
-                <button class="nav right" onclick="move(1)">&#8594;</button>
-                </div> -->
-
+                <div class="flex justify-center gap-6 pt-12 nav">
+                    <button data-v-1e34df72="" data-swiper-button="prev" class="swiper-button-prev button-prev" disabled="">
+                        <svg data-v-1e34df72="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18" xml:space="preserve" class="icon icon-base inline-block">
+                            <path d="M17.5 8.5H1.7L9.3.9c.2-.2.2-.5 0-.7s-.5-.2-.7 0L.2 8.6s-.1.1-.1.2c-.1.1-.1.3 0 .4 0 .1.1.1.1.2l8.5 8.5s.2.1.3.1.3 0 .4-.1c.2-.2.2-.5 0-.7L1.7 9.5h15.8c.3 0 .5-.2.5-.5s-.2-.5-.5-.5z" style="fill: #FFF;"></path>
+                        </svg>
+                    </button> 
+                    <button data-v-1e34df72="" data-swiper-button="next" class="hover:text-accent swiper-button-next button-next">
+                        <svg data-v-1e34df72="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18" xml:space="preserve" class="icon icon-base inline-block">
+                            <path d="M17.9 9.2c.1-.1.1-.3 0-.4 0-.1-.1-.1-.1-.2L9.4.2c-.2-.2-.6-.2-.8 0s-.2.5 0 .7l7.6 7.6H.5c-.3 0-.5.2-.5.5s.2.5.5.5h15.8l-7.6 7.6c-.2.2-.2.5 0 .7 0 .1.2.2.3.2s.3 0 .4-.1l8.5-8.5v-.2z" style="fill: #FFF;"></path>
+                        </svg>
+                    </button>
+                </div>
+              </div>
+            </section>
+            <section
+              data-section="light"
+              id="next"
+              class="overflow-x-hidden section-bg-light round-all margins-bottom paddings-default"
+              data-v-e7e61232
+            >
+              <div
+                class="mb-12 lg:mb-24 two-cols gutters-both gutters-mobile-inherit content-is-center"
+                data-v-0387dfc6
+              >
+                <div class="first-col" data-v-0387dfc6>
+                  <div
+                    class="__image round-all ratio-initial"
+                    data-v-6507b070
+                    data-v-0387dfc6
+                  >
+                    <img
+                      src="margraf-cdn.thron.com/delivery/public/image/margraf/2cbed4de-4cdf-4a65-9444-e9a98a33eb76/huusih/std/1920x0/assemblea-confindustria-2021.jpg"
+                      alt=""
+                      class="w-full"
+                      data-v-6507b070
+                    />
+                  </div>
+                </div>
+                <div class="second-col" data-v-0387dfc6>
+                  <h2
+                    class="mb-6 heading heading-lg"
+                    data-v-aced7c02
+                    data-v-0387dfc6
+                  >
+                    The Company
+                  </h2>
+                  <div class="formatted" data-v-0387dfc6>
+                    <p>
+                      We have been doing what we were born to do,
+                      <strong>for more than 100 years</strong><strong>. </strong
+                      ><strong>We extract and process </strong
+                      ><strong
+                        >marble and other natural stones from all over the
+                        world</strong
+                      >, using our experience to make them even more perfect.
+                    </p>
+                    <p>
+                      We turn nature into architecture, because this is what we
+                      do best:
+                      <strong
+                        >we supply architects and designers with the raw
+                        material to construct living spaces of authentic
+                        beauty.</strong
+                      >
+                    </p>
+                    <p>
+                      The story of <strong>Margraf</strong> – originally
+                      Industria Marmi Vicentini – began in 1906, in Chiampo, a
+                      small village in the province of Vicenza.
+                    </p>
+                  </div>
+                  <a
+                    href="about/index.html"
+                    class="inline-block mt-6"
+                    data-v-0387dfc6
+                  >
+                    <div class="btn" data-v-f4c47d22 data-v-0387dfc6>
+                      <div class="bg" data-v-f4c47d22></div>
+                      <div class="label" data-v-f4c47d22>About us</div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 18 18"
+                        xml:space="preserve"
+                        class="btn-icon icon icon-base inline-block"
+                        style="enable-background: new 0 0 18 18"
+                        data-v-f4c47d22
+                      >
+                        <path
+                          d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                          style="fill: currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="two-cols gutters-left gutters-mobile-inherit content-is-center reverse"
+                data-v-0387dfc6
+              >
+                <div class="first-col" data-v-0387dfc6>
+                  <div
+                    class="__image round-left ratio-initial"
+                    data-v-6507b070
+                    data-v-0387dfc6
+                  >
+                    <img
+                      src="margraf-cdn.thron.com/delivery/public/image/margraf/99f2f936-94e5-46b8-b571-829b38f0e86a/huusih/std/1920x0/velata-table-bianco-covelano.jpg"
+                      alt=""
+                      class="w-full"
+                      data-v-6507b070
+                    />
+                  </div>
+                </div>
+                <div class="second-col" data-v-0387dfc6>
+                  <h2
+                    class="mb-6 heading heading-lg"
+                    data-v-aced7c02
+                    data-v-0387dfc6
+                  >
+                    Marble and natural stone processing
+                  </h2>
+                  <div class="formatted" data-v-0387dfc6>
+                    <p>
+                      From extraction to processing into unfinished blocks and
+                      slabs, from the most sophisticated processes to marble
+                      tiles and custom-made products:
+                      <strong
+                        >when people think marble, they think Margraf.</strong
+                      >
+                      And not just in Italy.
+                    </p>
+                    <p>
+                      <strong>Marble, Margraf.</strong> Thanks to our deep
+                      connection with the material, our strong focus on
+                      <strong>research</strong> and
+                      <strong>the artisan <em>savoir faire</em></strong> that
+                      characterises every stage of the production process, we
+                      are
+                      <strong
+                        >an international benchmark for the processing of marble
+                        and natural stone.</strong
+                      >
+                    </p>
+                  </div>
+                  <a
+                    href="what-we-do/index.html"
+                    class="inline-block mt-6"
+                    data-v-0387dfc6
+                  >
+                    <div class="btn" data-v-f4c47d22 data-v-0387dfc6>
+                      <div class="bg" data-v-f4c47d22></div>
+                      <div class="label" data-v-f4c47d22>What we do</div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 18 18"
+                        xml:space="preserve"
+                        class="btn-icon icon icon-base inline-block"
+                        style="enable-background: new 0 0 18 18"
+                        data-v-f4c47d22
+                      >
+                        <path
+                          d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                          style="fill: currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <section
+              data-section="none"
+              class="overflow-x-hidden section-bg-none round-all margins-none paddings-default"
+              data-v-e7e61232
+            >
+              <div class="container" data-v-e7e61232>
+                <div
+                  class="flex flex-col justify-between gap-8 mb-6 lg:flex-row lg:items-center lg:mb-24"
+                  data-v-e7e61232
+                >
+                  <div class="lg:w-1/2" data-v-e7e61232>
+                    <h2 class="mb-4 heading heading-lg" data-v-aced7c02>
+                      News
+                    </h2>
+                    <div class="formatted max-w-prose">
+                      <p>
+                        The only thing that never changes is its beauty.
+                        <strong
+                          >New collections, technologies, fairs and
+                          events</strong
+                        >
+                        in which we take part: read the news and
+                        <strong
+                          >learn more about the multifaceted world of
+                          marble.</strong
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <a href="news/index.html">
+                    <div class="btn btn-light" data-v-f4c47d22>
+                      <div class="bg" data-v-f4c47d22></div>
+                      <div class="label" data-v-f4c47d22>All news</div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 18 18"
+                        xml:space="preserve"
+                        class="btn-icon icon icon-base inline-block"
+                        style="enable-background: new 0 0 18 18"
+                        data-v-f4c47d22
+                      >
+                        <path
+                          d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                          style="fill: currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16"
+                  data-v-e7e61232
+                >
+                  <div
+                    class="flex justify-between p-6 text-black bg-white rounded-2xl"
+                  >
+                    <div
+                      class="w-[90px] h-[90px] lg:w-[150px] lg:h-[150px] rounded-xl overflow-hidden shrink-0"
+                    >
+                      <img
+                        src="margraf-cdn.thron.com/delivery/public/image/margraf/64c8293f-8740-43db-86a9-3430292f3834/huusih/std/1920x0/news-fuorisalone-interno.jpg"
+                        class="object-cover object-center w-full h-full"
+                      />
+                    </div>
+                    <div class="w-[calc(100%-114px)] lg:w-[calc(100%-174px)]">
+                      <h2
+                        level="3"
+                        no-reveal=""
+                        class="heading heading-sm"
+                        data-v-aced7c02
+                      >
+                        Fuorisalone 2026 | LA CASA DI MARMO
+                      </h2>
+                      <div
+                        no-reveal=""
+                        class="formatted mt-3 mb-5 truncate lg:overflow-clip lg:whitespace-normal"
+                      >
+                        On the occasion of Milano Design Week 2026, Margraf
+                        presents...
+                      </div>
+                      <a
+                        href="news/fuorisalone-2026-la-casa-di-marmo/index.html"
+                      >
+                        <div class="btn" data-v-f4c47d22>
+                          <div class="bg" data-v-f4c47d22></div>
+                          <div class="label" data-v-f4c47d22>Read more</div>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 18 18"
+                            xml:space="preserve"
+                            class="btn-icon icon icon-base inline-block"
+                            style="enable-background: new 0 0 18 18"
+                            data-v-f4c47d22
+                          >
+                            <path
+                              d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                              style="fill: currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-between p-6 text-black bg-white rounded-2xl"
+                  >
+                    <div
+                      class="w-[90px] h-[90px] lg:w-[150px] lg:h-[150px] rounded-xl overflow-hidden shrink-0"
+                    >
+                      <img
+                        src="margraf-cdn.thron.com/delivery/public/image/margraf/4e63708f-db7a-4130-ba2e-9d4332b99d4b/huusih/std/1920x0/fiera-coverings.jpg"
+                        class="object-cover object-center w-full h-full"
+                      />
+                    </div>
+                    <div class="w-[calc(100%-114px)] lg:w-[calc(100%-174px)]">
+                      <h2
+                        level="3"
+                        no-reveal=""
+                        class="heading heading-sm"
+                        data-v-aced7c02
+                      >
+                        Join Us @ Coverings 2026
+                      </h2>
+                      <div
+                        no-reveal=""
+                        class="formatted mt-3 mb-5 truncate lg:overflow-clip lg:whitespace-normal"
+                      >
+                        Coverings 2026 is approaching and Margraf is ready to
+                        return...
+                      </div>
+                      <a href="news/join-us-coverings-2026/index.html">
+                        <div class="btn" data-v-f4c47d22>
+                          <div class="bg" data-v-f4c47d22></div>
+                          <div class="label" data-v-f4c47d22>Read more</div>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 18 18"
+                            xml:space="preserve"
+                            class="btn-icon icon icon-base inline-block"
+                            style="enable-background: new 0 0 18 18"
+                            data-v-f4c47d22
+                          >
+                            <path
+                              d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                              style="fill: currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <footer class="py-12 bg-gray-dark rounded-t-2xl">
+            <div class="container grid grid-cols-1 gap-12 lg:grid-cols-2">
+              <div>
+                <img
+                  src="images/margraf-icon.png"
+                  alt="Margraf Icon"
+                  width="45"
+                  height="30"
+                  class="mb-16"
+                />
+                <h4 class="mb-8 heading heading-sm" data-v-aced7c02>
+                  Sign up for newsletter
+                </h4>
+                <div class="relative max-w-md">
+                  <!---->
+                  <span mode="out-in">
+                    <form>
+                      <div class="field">
+                        <div class="input-wrapper">
+                          <label for="newsletter-name" class="label"
+                            ><span>Name*</span></label
+                          >
+                          <input id="newsletter-name" class="input" />
+                          <!---->
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="input-wrapper">
+                          <label for="newsletter-surname" class="label"
+                            ><span>Surname*</span></label
+                          >
+                          <input id="newsletter-surname" class="input" />
+                          <!---->
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="input-wrapper">
+                          <label for="newsletterEmail" class="label"
+                            ><span>E-mail*</span></label
+                          >
+                          <input id="newsletterEmail" class="input" />
+                          <!---->
+                        </div>
+                      </div>
+                      <div data-v-2b4a4823>
+                        <div class="field" data-v-2b4a4823>
+                          <div class="input-wrapper" data-v-2b4a4823>
+                            <label
+                              for="newsletterCity"
+                              class="label"
+                              data-v-2b4a4823
+                              ><span data-v-2b4a4823>City*</span></label
+                            >
+                            <input
+                              id="newsletterCity"
+                              class="input"
+                              data-v-2b4a4823
+                            />
+                            <!---->
+                            <div
+                              class="bg-white border-light-grey py-2 absolute w-full z-10 top-full rounded-2xl mt-[14px]"
+                              style="display: none"
+                              data-v-2b4a4823
+                              data-v-2b4a4823
+                            ></div>
+                          </div>
+                        </div>
+                        <span location-field="" data-v-2b4a4823>
+                          <div class="untouched pristine" data-v-2b4a4823>
+                            <input
+                              type="hidden"
+                              value="[object Object]"
+                              data-v-2b4a4823
+                            />
+                            <span data-v-2b4a4823></span>
+                          </div>
+                        </span>
+                      </div>
+                      <div class="field" data-v-3f562434>
+                        <div class="input-wrapper" data-v-3f562434>
+                          <label
+                            for="client-type"
+                            class="label"
+                            data-v-3f562434
+                          >
+                            <span data-v-3f562434>Customer category*</span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xml:space="preserve"
+                              viewBox="0 0 13 8"
+                              class="duration-300 icon icon-sm inline-block"
+                              style="enable-background: new 0 0 13 8"
+                              data-v-3f562434
+                            >
+                              <path
+                                d="M6.5 7.3c-.1 0-.3-.1-.4-.1L.5 1.5C.3 1.3.3 1 .5.8s.5-.2.7 0l5.3 5.3L11.8.8c.2-.2.5-.2.7 0s.2.5 0 .7L6.9 7.2c-.1.1-.3.1-.4.1z"
+                                style="fill: currentColor"
+                              ></path>
+                            </svg>
+                          </label>
+                          <input
+                            name="client-type"
+                            id="client-type"
+                            type="select"
+                            class="input"
+                            data-v-3f562434
+                          />
+                          <!---->
+                          <!---->
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="input-wrapper">
+                          <label for="newsletterCompany" class="label"
+                            ><span>Company name*</span></label
+                          >
+                          <input id="newsletterCompany" class="input" />
+                          <!---->
+                        </div>
+                      </div>
+                      <div class="field" data-v-46875ef8>
+                        <div class="input-wrapper-checkbox" data-v-46875ef8>
+                          <input
+                            id="newsletterPrivacy"
+                            type="checkbox"
+                            name="newsletterPrivacy"
+                            class="input"
+                            data-v-46875ef8
+                          />
+                          <label
+                            for="newsletterPrivacy"
+                            class="label-checkbox"
+                            data-v-46875ef8
+                          >
+                            <div class="fake-checkbox" data-v-46875ef8></div>
+                            <span class="w-full" data-v-46875ef8
+                              >I accept the
+                              <a
+                                href="https://www.margraf.it/en/privacy-policy/"
+                                target="_blank"
+                                >privacy policy</a
+                              >
+                              and consent to the processing of my data for
+                              marketing purposes.</span
+                            >
+                          </label>
+                          <!---->
+                        </div>
+                      </div>
+                      <button
+                        type="submit"
+                        class="btn btn-light"
+                        data-v-f4c47d22
+                      >
+                        <div class="bg" data-v-f4c47d22></div>
+                        <div class="label" data-v-f4c47d22>Submit</div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 18 18"
+                          xml:space="preserve"
+                          class="btn-icon icon icon-base inline-block"
+                          style="enable-background: new 0 0 18 18"
+                          data-v-f4c47d22
+                        >
+                          <path
+                            d="M15.5 2.8c-.1-.1-.1-.2-.3-.3H3c-.3 0-.5.2-.5.5s.2.5.5.5h10.8L2.6 14.6c-.2.2-.2.5 0 .7.1.1.2.1.4.1s.3 0 .4-.1L14.5 4.2V15c0 .3.2.5.5.5s.5-.2.5-.5V2.8z"
+                            style="fill: currentColor"
+                          ></path>
+                        </svg>
+                      </button>
+                      <!---->
+                    </form>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="flex flex-wrap justify-between px-6 py-3 text-xs uppercase bg-black rounded-xl gap-y-3"
+                >
+                  <a
+                    href="https://www.facebook.com/margrafspa/"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 duration-300 social-link hover:text-accent"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="hidden lg:inline-block icon icon-base inline-block"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <path
+                        d="M9.9 16.5H7.1c-.3 0-.5-.2-.5-.5v-5.1H5c-.3 0-.5-.2-.5-.5V7.6c0-.3.2-.5.5-.5h1.6V5.5c0-1.1.4-2.1 1.2-2.8.8-.8 1.8-1.2 2.8-1.2h2.1c.3 0 .5.2.5.5v2.8c0 .3-.2.5-.5.5h-2.1c-.1 0-.1 0-.1.1l-.1.1v1.6h2.3c.2 0 .3.1.4.2.1.1.1.3.1.4l-.7 2.8c-.1.2-.3.4-.5.4h-1.6V16c0 .3-.2.5-.5.5zm-2.3-1h1.8v-5.1c0-.3.2-.5.5-.5h1.7l.5-1.8H9.9c-.3 0-.5-.2-.5-.5V5.5c0-.3.1-.6.4-.8.2-.2.5-.4.8-.4h1.6V2.5h-1.6c-.8 0-1.6.3-2.1.9-.6.5-.9 1.3-.9 2.1v2.1c0 .3-.2.5-.5.5H5.5v1.8h1.6c.3 0 .5.2.5.5v5.1z"
+                        style="fill: currentColor"
+                      ></path>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="lg:hidden icon icon-md inline-block"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <path
+                        d="M9.9 16.5H7.1c-.3 0-.5-.2-.5-.5v-5.1H5c-.3 0-.5-.2-.5-.5V7.6c0-.3.2-.5.5-.5h1.6V5.5c0-1.1.4-2.1 1.2-2.8.8-.8 1.8-1.2 2.8-1.2h2.1c.3 0 .5.2.5.5v2.8c0 .3-.2.5-.5.5h-2.1c-.1 0-.1 0-.1.1l-.1.1v1.6h2.3c.2 0 .3.1.4.2.1.1.1.3.1.4l-.7 2.8c-.1.2-.3.4-.5.4h-1.6V16c0 .3-.2.5-.5.5zm-2.3-1h1.8v-5.1c0-.3.2-.5.5-.5h1.7l.5-1.8H9.9c-.3 0-.5-.2-.5-.5V5.5c0-.3.1-.6.4-.8.2-.2.5-.4.8-.4h1.6V2.5h-1.6c-.8 0-1.6.3-2.1.9-.6.5-.9 1.3-.9 2.1v2.1c0 .3-.2.5-.5.5H5.5v1.8h1.6c.3 0 .5.2.5.5v5.1z"
+                        style="fill: currentColor"
+                      ></path>
+                    </svg>
+                    <span class="hidden sm:inline first-letter:uppercase">
+                      facebook
+                    </span>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/margrafspa/"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 duration-300 social-link hover:text-accent"
+                  >
+                    <svg
+                      version="1.1"
+                      id="Livello_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="hidden lg:inline-block icon icon-base inline-block"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <style>
+                        .st0 {
+                          fill: currentColor;
+                        }
+                      </style>
+                      <path
+                        d="M12.5 1.5h-7c-2.2 0-4 1.8-4 4v7c0 2.2 1.8 4 4 4h7c2.2 0 4-1.8 4-4v-7c0-2.2-1.8-4-4-4zm3 11c0 1.7-1.3 3-3 3h-7c-1.7 0-3-1.3-3-3v-7c0-1.7 1.3-3 3-3h7c1.7 0 3 1.3 3 3v7z"
+                        class="st0"
+                      ></path>
+                      <path
+                        d="M11.4 6.6c-.5-.5-1.2-.8-1.8-.9-.7-.1-1.4 0-2 .3s-1.2.9-1.5 1.5c-.3.6-.4 1.3-.3 2 .1.7.4 1.3.9 1.8s1.1.8 1.8.9H9c.5 0 1-.1 1.5-.4.6-.3 1.1-.8 1.4-1.4.3-.6.4-1.3.3-2 0-.6-.3-1.3-.8-1.8zm-.3 3.4c-.2.4-.6.8-1 1-.4.2-.9.3-1.4.2-.5-.1-.9-.3-1.3-.6-.3-.3-.6-.8-.6-1.3-.1-.5 0-1 .2-1.4.2-.4.6-.8 1-1 .3-.1.7-.2 1-.2h.3c.5.1.9.3 1.3.6.3.3.6.8.6 1.3.2.5.1 1-.1 1.4z"
+                        class="st0"
+                      ></path>
+                      <circle cx="13.2" cy="4.8" r=".7" class="st0"></circle>
+                    </svg>
+                    <svg
+                      version="1.1"
+                      id="Livello_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="lg:hidden icon icon-md inline-block"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <style>
+                        .st0 {
+                          fill: currentColor;
+                        }
+                      </style>
+                      <path
+                        d="M12.5 1.5h-7c-2.2 0-4 1.8-4 4v7c0 2.2 1.8 4 4 4h7c2.2 0 4-1.8 4-4v-7c0-2.2-1.8-4-4-4zm3 11c0 1.7-1.3 3-3 3h-7c-1.7 0-3-1.3-3-3v-7c0-1.7 1.3-3 3-3h7c1.7 0 3 1.3 3 3v7z"
+                        class="st0"
+                      ></path>
+                      <path
+                        d="M11.4 6.6c-.5-.5-1.2-.8-1.8-.9-.7-.1-1.4 0-2 .3s-1.2.9-1.5 1.5c-.3.6-.4 1.3-.3 2 .1.7.4 1.3.9 1.8s1.1.8 1.8.9H9c.5 0 1-.1 1.5-.4.6-.3 1.1-.8 1.4-1.4.3-.6.4-1.3.3-2 0-.6-.3-1.3-.8-1.8zm-.3 3.4c-.2.4-.6.8-1 1-.4.2-.9.3-1.4.2-.5-.1-.9-.3-1.3-.6-.3-.3-.6-.8-.6-1.3-.1-.5 0-1 .2-1.4.2-.4.6-.8 1-1 .3-.1.7-.2 1-.2h.3c.5.1.9.3 1.3.6.3.3.6.8.6 1.3.2.5.1 1-.1 1.4z"
+                        class="st0"
+                      ></path>
+                      <circle cx="13.2" cy="4.8" r=".7" class="st0"></circle>
+                    </svg>
+                    <span class="hidden sm:inline first-letter:uppercase">
+                      instagram
+                    </span>
+                  </a>
+                  <a
+                    href="https://it.linkedin.com/company/margraf-spa"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 duration-300 social-link hover:text-accent"
+                  >
+                    <svg
+                      version="1.1"
+                      id="Livello_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="hidden lg:inline-block icon icon-base inline-block"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <style>
+                        .st0 {
+                          fill: currentColor;
+                        }
+                      </style>
+                      <path
+                        d="M15.7 15.5H13c-.3 0-.5-.2-.5-.5v-4.8c0-.2-.1-.5-.3-.6-.3-.3-.9-.3-1.2 0-.2.2-.3.4-.3.6V15c0 .3-.2.5-.5.5H7.5c-.3 0-.5-.2-.5-.5v-4.8C7 9 7.5 7.8 8.3 7c.9-.9 2-1.3 3.3-1.3s2.4.4 3.2 1.3c.9.9 1.3 2 1.3 3.3V15c.1.3-.1.5-.4.5zm-2.3-1h1.7v-4.3c0-1-.4-1.9-1.1-2.5-1.4-1.4-3.7-1.4-5.1 0-.6.6-.9 1.5-.9 2.5v4.3h1.7v-4.3c0-.5.2-1 .5-1.3.7-.7 1.9-.7 2.6 0 .4.4.5.8.5 1.3v4.3zM4.7 15.5H2c-.3 0-.5-.2-.5-.5V6.8c0-.3.2-.5.5-.5h2.7c.3 0 .5.2.5.5V15c0 .3-.2.5-.5.5zm-2.2-1h1.7V7.3H2.5v7.2zM3.4 5.2c-1 0-1.9-.8-1.9-1.9s.8-1.9 1.9-1.9 1.9.8 1.9 1.9-.9 1.9-1.9 1.9zm0-2.7c-.5 0-.9.4-.9.9s.4.9.9.9.9-.4.9-.9c-.1-.5-.5-.9-.9-.9z"
+                        class="st0"
+                      ></path>
+                    </svg>
+                    <svg
+                      version="1.1"
+                      id="Livello_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="lg:hidden icon icon-md inline-block"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <style>
+                        .st0 {
+                          fill: currentColor;
+                        }
+                      </style>
+                      <path
+                        d="M15.7 15.5H13c-.3 0-.5-.2-.5-.5v-4.8c0-.2-.1-.5-.3-.6-.3-.3-.9-.3-1.2 0-.2.2-.3.4-.3.6V15c0 .3-.2.5-.5.5H7.5c-.3 0-.5-.2-.5-.5v-4.8C7 9 7.5 7.8 8.3 7c.9-.9 2-1.3 3.3-1.3s2.4.4 3.2 1.3c.9.9 1.3 2 1.3 3.3V15c.1.3-.1.5-.4.5zm-2.3-1h1.7v-4.3c0-1-.4-1.9-1.1-2.5-1.4-1.4-3.7-1.4-5.1 0-.6.6-.9 1.5-.9 2.5v4.3h1.7v-4.3c0-.5.2-1 .5-1.3.7-.7 1.9-.7 2.6 0 .4.4.5.8.5 1.3v4.3zM4.7 15.5H2c-.3 0-.5-.2-.5-.5V6.8c0-.3.2-.5.5-.5h2.7c.3 0 .5.2.5.5V15c0 .3-.2.5-.5.5zm-2.2-1h1.7V7.3H2.5v7.2zM3.4 5.2c-1 0-1.9-.8-1.9-1.9s.8-1.9 1.9-1.9 1.9.8 1.9 1.9-.9 1.9-1.9 1.9zm0-2.7c-.5 0-.9.4-.9.9s.4.9.9.9.9-.4.9-.9c-.1-.5-.5-.9-.9-.9z"
+                        class="st0"
+                      ></path>
+                    </svg>
+                    <span class="hidden sm:inline first-letter:uppercase">
+                      linkedin
+                    </span>
+                  </a>
+                  <a
+                    href="https://www.pinterest.it/margrafspa/"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 duration-300 social-link hover:text-accent"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="hidden lg:inline-block icon icon-base inline-block"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <path
+                        d="M9.1 2C5.2 2 2 5.1 2 9s3.2 7 7.1 7c3.9 0 7.1-3.1 7.1-7S13 2 9.1 2zm0 13.3c-.7 0-1.3-.1-1.9-.3.3-.4.7-1.1.8-1.7.1-.3.4-1.5.4-1.5.2.4.8.7 1.5.7 1.9 0 3.3-1.8 3.3-3.9 0-2.1-1.7-3.7-4-3.7C6.5 5 5 6.8 5 8.8c0 .9.5 2.1 1.3 2.5.1.1.2 0 .2-.1s.1-.5.2-.7v-.2c-.3-.3-.5-.9-.5-1.4 0-1.4 1.1-2.8 2.9-2.8 1.6 0 2.7 1.1 2.7 2.6 0 1.7-.9 2.9-2 2.9-.6 0-1.1-.5-1-1.1.2-.8.5-1.6.5-2.2 0-.5-.3-.9-.8-.9-.6.1-1.2.7-1.2 1.6 0 .6.2.9.2.9s-.6 2.7-.8 3.2c-.1.5-.1 1.3 0 1.8-2.3-.9-4-3.2-4-5.9 0-3.5 2.9-6.3 6.4-6.3 3.6 0 6.4 2.8 6.4 6.3s-2.8 6.3-6.4 6.3z"
+                        style="
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: currentColor;
+                        "
+                      ></path>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="lg:hidden icon icon-md inline-block"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <path
+                        d="M9.1 2C5.2 2 2 5.1 2 9s3.2 7 7.1 7c3.9 0 7.1-3.1 7.1-7S13 2 9.1 2zm0 13.3c-.7 0-1.3-.1-1.9-.3.3-.4.7-1.1.8-1.7.1-.3.4-1.5.4-1.5.2.4.8.7 1.5.7 1.9 0 3.3-1.8 3.3-3.9 0-2.1-1.7-3.7-4-3.7C6.5 5 5 6.8 5 8.8c0 .9.5 2.1 1.3 2.5.1.1.2 0 .2-.1s.1-.5.2-.7v-.2c-.3-.3-.5-.9-.5-1.4 0-1.4 1.1-2.8 2.9-2.8 1.6 0 2.7 1.1 2.7 2.6 0 1.7-.9 2.9-2 2.9-.6 0-1.1-.5-1-1.1.2-.8.5-1.6.5-2.2 0-.5-.3-.9-.8-.9-.6.1-1.2.7-1.2 1.6 0 .6.2.9.2.9s-.6 2.7-.8 3.2c-.1.5-.1 1.3 0 1.8-2.3-.9-4-3.2-4-5.9 0-3.5 2.9-6.3 6.4-6.3 3.6 0 6.4 2.8 6.4 6.3s-2.8 6.3-6.4 6.3z"
+                        style="
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: currentColor;
+                        "
+                      ></path>
+                    </svg>
+                    <span class="hidden sm:inline first-letter:uppercase">
+                      pinterest
+                    </span>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UC0n5QdR8-RQGip4DhfUIaVA"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 duration-300 social-link hover:text-accent"
+                  >
+                    <svg
+                      version="1.1"
+                      id="Livello_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="hidden lg:inline-block icon icon-base inline-block"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <style>
+                        .st0 {
+                          fill: currentColor;
+                        }
+                      </style>
+                      <path
+                        d="M16.4 5.4c-.1-.3-.3-.7-.6-1-.2-.3-.6-.5-1-.6-1.2-.3-5.2-.3-5.7-.3s-4.5 0-5.7.3c-.4.1-.7.3-1 .6-.3.3-.5.7-.6 1.1-.2 1.1-.3 2.3-.3 3.5s.1 2.4.3 3.6c.1.4.3.7.6 1 .3.3.6.5 1 .6 1.2.3 5.2.3 5.7.3s4.6 0 5.7-.4c.4-.1.7-.3 1-.6s.5-.7.6-1.1c.2-1.2.3-2.3.3-3.5 0-1.1-.1-2.3-.3-3.5zm-1 6.9c0 .2-.1.4-.3.6l-.6.3c-.8.2-4.2.3-5.4.3-1.2 0-4.5-.1-5.4-.3-.2 0-.4-.1-.6-.3-.1-.1-.3-.3-.3-.5-.2-1.1-.3-2.3-.3-3.4s.1-2.2.3-3.3c0-.2.2-.4.3-.6.2-.1.4-.3.6-.3.8-.2 4.2-.3 5.4-.3 1.2 0 4.6 0 5.4.3.2 0 .4.1.6.3l.3.6c.2 1.1.3 2.2.3 3.3s-.1 2.2-.3 3.3z"
+                        class="st0"
+                      ></path>
+                      <path
+                        d="M11.6 8.6 7.9 6.5c-.2-.1-.3-.1-.5 0-.1.1-.2.2-.2.4v4.2c0 .1 0 .3.2.4.1.1.2.1.3.1 0 0 .1 0 .2-.1l3.7-2.1c.2-.1.3-.3.3-.4s-.1-.3-.3-.4zm-3.4 1.7V7.8L10.4 9l-2.2 1.3z"
+                        class="st0"
+                      ></path>
+                    </svg>
+                    <svg
+                      version="1.1"
+                      id="Livello_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 18 18"
+                      xml:space="preserve"
+                      class="lg:hidden icon icon-md inline-block"
+                      style="enable-background: new 0 0 18 18"
+                    >
+                      <style>
+                        .st0 {
+                          fill: currentColor;
+                        }
+                      </style>
+                      <path
+                        d="M16.4 5.4c-.1-.3-.3-.7-.6-1-.2-.3-.6-.5-1-.6-1.2-.3-5.2-.3-5.7-.3s-4.5 0-5.7.3c-.4.1-.7.3-1 .6-.3.3-.5.7-.6 1.1-.2 1.1-.3 2.3-.3 3.5s.1 2.4.3 3.6c.1.4.3.7.6 1 .3.3.6.5 1 .6 1.2.3 5.2.3 5.7.3s4.6 0 5.7-.4c.4-.1.7-.3 1-.6s.5-.7.6-1.1c.2-1.2.3-2.3.3-3.5 0-1.1-.1-2.3-.3-3.5zm-1 6.9c0 .2-.1.4-.3.6l-.6.3c-.8.2-4.2.3-5.4.3-1.2 0-4.5-.1-5.4-.3-.2 0-.4-.1-.6-.3-.1-.1-.3-.3-.3-.5-.2-1.1-.3-2.3-.3-3.4s.1-2.2.3-3.3c0-.2.2-.4.3-.6.2-.1.4-.3.6-.3.8-.2 4.2-.3 5.4-.3 1.2 0 4.6 0 5.4.3.2 0 .4.1.6.3l.3.6c.2 1.1.3 2.2.3 3.3s-.1 2.2-.3 3.3z"
+                        class="st0"
+                      ></path>
+                      <path
+                        d="M11.6 8.6 7.9 6.5c-.2-.1-.3-.1-.5 0-.1.1-.2.2-.2.4v4.2c0 .1 0 .3.2.4.1.1.2.1.3.1 0 0 .1 0 .2-.1l3.7-2.1c.2-.1.3-.3.3-.4s-.1-.3-.3-.4zm-3.4 1.7V7.8L10.4 9l-2.2 1.3z"
+                        class="st0"
+                      ></path>
+                    </svg>
+                    <span class="hidden sm:inline first-letter:uppercase">
+                      youtube
+                    </span>
+                  </a>
+                </div>
+                <div class="flex flex-col my-16 lg:flex-row">
+                  <div
+                    class="flex flex-col items-start font-medium text-md gap-y-6"
+                  >
+                    <a href="tel:+390444475900" class="hover:text-accent">
+                      +39 0444 475 900
+                    </a>
+                    <a href="mailto:info@margraf.it" class="hover:text-accent">
+                      info@margraf.it
+                    </a>
+                    <a
+                      href="https://www.margraf.it/en/privacy-policy/"
+                      class="text-white/50 hover:text-accent"
+                    >
+                      Privacy Policy
+                    </a>
+                    <a
+                      href="cookie-policy/index.html"
+                      class="text-white/50 hover:text-accent"
+                    >
+                      Cookie Policy
+                    </a>
+                    <a
+                      href="https://www.margraf.it/pdf/general-terms-and-conditions-of-sale.pdf"
+                      target="_blank"
+                      class="text-white/50 hover:text-accent"
+                    >
+                      General terms and conditions of sale
+                    </a>
+                    <a
+                      href="products-map/index.html"
+                      class="text-white/50 hover:text-accent"
+                    >
+                      Products map
+                    </a>
+                    <a
+                      href="product-categories/index.html"
+                      class="text-white/50 hover:text-accent"
+                    >
+                      Categories map
+                    </a>
+                  </div>
+                  <div
+                    class="mt-12 font-medium text-black lg:mt-auto lg:ml-auto"
+                  >
+                    <div class="relative inline-block">
+                      <button class="btn btn-black icon-left" data-v-f4c47d22>
+                        <div class="bg" data-v-f4c47d22></div>
+                        <div class="label" data-v-f4c47d22>en</div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 18 18"
+                          xml:space="preserve"
+                          class="btn-icon icon icon-base inline-block"
+                          style="enable-background: new 0 0 18 18"
+                          data-v-f4c47d22
+                        >
+                          <path
+                            d="M8.8 1.5c-4 0-7.2 3.3-7.2 7.2 0 4 3.3 7.2 7.2 7.2 4 0 7.2-3.3 7.2-7.2 0-3.9-3.3-7.2-7.2-7.2zM15 8.2h-3.1c-.1-2-.8-4-2-5.6 2.7.5 4.8 2.8 5.1 5.6zm-8.4 1h4.3c-.1 2-.9 3.9-2.2 5.5-1.2-1.5-2-3.5-2.1-5.5zm0-1c.1-2 .9-3.9 2.2-5.5 1.3 1.6 2 3.5 2.2 5.5H6.6zm1-5.6c-1.2 1.6-1.9 3.6-2 5.6H2.5c.3-2.8 2.4-5.1 5.1-5.6zM2.5 9.2h3.1c.1 2 .8 4 2 5.6-2.7-.4-4.8-2.7-5.1-5.6zm7.4 5.7c1.2-1.6 1.9-3.6 2-5.6H15c-.3 2.8-2.4 5.1-5.1 5.6z"
+                            style="fill: currentColor"
+                          ></path>
+                        </svg>
+                      </button>
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col justify-between gap-4 text-xs lg:flex-row lg:items-center"
+                >
+                  <span>
+                    Copyright © MARGRAF - Industria Marmi Vicentini | P.IVA
+                    01854870241
+                  </span>
+                  <a
+                    href="https://credits.palazzinacreativa.it/"
+                    target="_blank"
+                    class="plz shrink-0"
+                    data-v-48bf0d6c
+                  >
+                    Website made by
+                    <svg
+                      width="25"
+                      height="20"
+                      viewBox="0 0 25 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-v-48bf0d6c
+                    >
+                      <path
+                        d="M19.6554 1.98082L22.65 5.23353V18.0192H1.96741V5.23353L4.96201 1.98082H19.6554ZM20.5149 0H4.10256L0 4.4558V20H24.6154V4.4558L20.5128 0H20.5149Z"
+                        fill="currentColor"
+                        data-v-48bf0d6c
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
-        </main>
-        <footer></footer>
-        <script src="js/script.js"></script>
-    </body>
+          </footer>
+        </div>
+      </div>
+    </div>
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="_nuxt/static/1776180784/en/state.js"></script>
+    <script src="_nuxt/38884c4.js" defer></script>
+    <script src="_nuxt/69be6c3.js" defer></script>
+    <script src="_nuxt/e3d9f18.js" defer></script>
+    <script src="_nuxt/5d3a765.js" defer></script>
+    <script src="_nuxt/a41e084.js" defer></script>
+    <script src="_nuxt/0164e5b.js" defer></script>
+    <script src="_nuxt/3c5cde3.js" defer></script>
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
 
+    //var swiper2 = new Swiper(".mySwiper2", {});
+
+    
+  </script>
+  </body>
 </html>

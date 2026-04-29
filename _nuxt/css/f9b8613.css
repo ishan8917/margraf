@@ -1,0 +1,25 @@
+.formatted p {
+  margin-bottom: 1.5rem;
+}
+.formatted p:last-child {
+  margin-bottom: 0;
+}
+.formatted b,
+.formatted strong {
+  font-weight: 700;
+}
+.formatted ul {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+}
+.formatted ul:first-child {
+  margin-top: 0;
+}
+.formatted ul:last-child {
+  margin-bottom: 0;
+}
+.formatted li {
+  margin-bottom: 0.5rem;
+}

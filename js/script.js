@@ -1,34 +1,41 @@
-
-let currentIndex = 1;
 const cards = document.querySelectorAll('.card');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
 
-function updateCarousel() {
+let current = 0;
+
+function updateSlider() {
   cards.forEach((card, index) => {
-    card.classList.remove('active');
+    card.classList.remove('active', 'left', 'right');
 
-    const offset = index - currentIndex;
-
-    card.style.transform =
-      `translateX(${offset * 160}px) scale(${offset === 0 ? 1 : 0.7})
-       rotateY(${offset * -8}deg)`;
-
-    card.style.zIndex = 10 - Math.abs(offset);
-    card.style.opacity = offset === 0 ? 1 : 0.4;
+    if (index === current) {
+      card.classList.add('active');
+    } else if (index === current - 1) {
+      card.classList.add('left');
+    } else if (index === current + 1) {
+      card.classList.add('right');
+    }
   });
-
-  cards[currentIndex].classList.add('active');
 }
 
-function move(direction) {
-  currentIndex += direction;
+next.addEventListener('click', () => {
+  current = (current + 1) % cards.length;
+  updateSlider();
+});
 
-  if (currentIndex < 0) currentIndex = cards.length - 1;
-  if (currentIndex >= cards.length) currentIndex = 0;
+prev.addEventListener('click', () => {
+  current = (current - 1 + cards.length) % cards.length;
+  updateSlider();
+});
 
-  updateCarousel();
-}
+cards.forEach((card, index) => {
+  card.addEventListener('click', () => {
+    current = index;
+    updateSlider();
+  });
+});
 
-updateCarousel();
+updateSlider();
 
 
 (window.webpackJsonp = window.webpackJsonp || []).push([[82, 9, 10, 15, 17, 30, 32, 41, 42, 43, 71], {

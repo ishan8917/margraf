@@ -1,0 +1,73 @@
+.__image[data-v-6507b070] {
+  overflow: hidden;
+  position: relative;
+}
+.round-all[data-v-6507b070] {
+  border-radius: 1rem;
+}
+.round-left[data-v-6507b070] {
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.round-right[data-v-6507b070] {
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.round-none[data-v-6507b070] {
+  border-radius: 0;
+}
+.__image:not(.ratio-initial) img[data-v-6507b070] {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.__image.ratio-16-9[data-v-6507b070] {
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.__image.ratio-4-3[data-v-6507b070] {
+  height: 0;
+  padding-bottom: 75%;
+}
+.__image.ratio-1-1[data-v-6507b070] {
+  height: 0;
+  padding-bottom: 100%;
+}
+.formatted p {
+  margin-bottom: 1.5rem;
+}
+.formatted p:last-child {
+  margin-bottom: 0;
+}
+.formatted b,
+.formatted strong {
+  font-weight: 700;
+}
+.formatted ul {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+}
+.formatted ul:first-child {
+  margin-top: 0;
+}
+.formatted ul:last-child {
+  margin-bottom: 0;
+}
+.formatted li {
+  margin-bottom: 0.5rem;
+}
+:root {
+  --plyr-color-main: #3B7A3C;
+}
+.plyr__control--overlaid {
+  background: #fff;
+  color: #0f0f0f;
+}
